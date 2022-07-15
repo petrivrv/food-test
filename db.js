@@ -3,7 +3,7 @@ const {Sequelize} = require('sequelize');
 
 const DB_NAME = 'roma00041';
 const DB_USER =  'roma00041';
-const DB_PASSWORD = 'Qw_1212';
+const DB_PASSWORD = '**';
 const DB_HOST = 'lara777.zzz.com.ua';
 const DB_PORT = '3306';
 
