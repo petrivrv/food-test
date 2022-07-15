@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const util = require('util');
 const sequelize = require('./db');
 const models = require('./models/models');
 const router = require('./router');
@@ -25,7 +26,7 @@ const startServer = async  () => {
     try{
         await sequelize.authenticate();
         await sequelize.sync();
-        app.listen(PORT,  () => { console.log("server started..."); });
+        app.listen(PORT,  () => { util.log("server started..."); });
     }
     catch(e){
         console.log(e);
